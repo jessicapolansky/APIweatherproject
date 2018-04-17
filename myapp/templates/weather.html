@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block title %}Weather{% endblock %}
+{% block content %}
+
+<h4>Results</h4>
+<p>Current temperature in {{ results['name'] }} is {{ results['main']['temp'] }} degrees.</p>
+<p>You can expect {{ results['weather'][0]['description'] }} with wind speeds of {{ results['wind']['speed'] }} mph.</p>
+
+{% endblock %}
+{"coord":{"lon":-95.37,"lat":29.76},
+"weather":[{"id":800,"main":"Clear","description":"clear sky","icon":"01d"}],
+"base":"stations","main":{"temp":81,"pressure":1017,"humidity":34,"temp_min":80.6,"temp_max":82.4},
+"visibility":16093,
+"wind":{"speed":11.41,"gust":10.3},"clouds":{"all":1},
+"dt":1523987700,"sys":{"type":1,"id":2646,"message":0.0044,"country":"US","sunrise":1523965910,"sunset":1524012614},
+"id":4699066,"name":"Houston","cod":200}

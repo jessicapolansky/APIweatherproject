@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block title %}Weather{% endblock %}
+{% block content %}
+
+  <div class="container">
+<h4>Enter your city name: </h4>
+<form action="" method="POST">
+  <textarea name="cityname"required></textarea>
+  <br>
+  <button class="btn btn-info" role="button" type="Submit">Submit</button>
+</form></div>
+{% if cityname %}
+<h3>{{ cityname }}TEST</h3>
+{% else %}
+{% endif %}
+{% endblock %}
