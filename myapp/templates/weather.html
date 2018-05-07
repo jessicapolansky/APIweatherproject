@@ -1,11 +1,11 @@
 {% extends "base.html" %}
 {% block title %}Weather{% endblock %}
 {% block content %}
-
+  <div class="container">
 <h4>Results</h4>
 <p>Current temperature in {{ results['name'] }} is {{ results['main']['temp'] }} degrees.</p>
 <p>You can expect {{ results['weather'][0]['description'] }} with wind speeds of {{ results['wind']['speed'] }} mph.</p>
-
+</div>
 {% endblock %}
 {"coord":{"lon":-95.37,"lat":29.76},
 "weather":[{"id":800,"main":"Clear","description":"clear sky","icon":"01d"}],

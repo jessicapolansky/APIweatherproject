@@ -1,0 +1,10 @@
+.main-content{
+  min-height:745px;
+}
+.card-header {
+   text-align: center;
+   background-image: url('/static/img/outside.jpg');
+}
+a {
+  color: lightblue;
+}
